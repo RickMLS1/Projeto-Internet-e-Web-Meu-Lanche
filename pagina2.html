@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="PT-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Meu lanche</title>
+    <script src="https://kit.fontawesome.com/fca8199cf7.js"></script>
+    <style media="screen">
+      title
+      {
+        font-family: Open Sans;
+      }
+      body
+      {
+        font-family: Open Sans;
+        background-image:url("coxi.jpg");
+        background-repeat:repeat;
+      }
+      input{
+        width: 120px;
+        height: 60px;
+      }
+      .menu {
+        margin-top: -1.5%;
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        background-color: #499869;
+        height: 120px;
+      }
+      .menu li {
+        margin-top: 45px;
+        float: left;
+      }
+      .fa-hamburger{
+        margin-top: 0px;
+        margin-left: 30px;
+        color: white;
+        font-size: 35px;
+      }
+      .list_cards{
+        margin-left: 80px;
+        margin-top: 20px;
+        list-style-type: none;
+      }
+      .cards_right{
+        margin-left: 600px;
+        margin-top: 40px;
+        list-style-type: none;
+      }
+      .card{
+        display: block;
+        margin-top: 80px;
+        width: 400px;
+        height: 380px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.4s;
+      }
+      .card .imagem img{
+        margin-left:10px;
+        margin-top: 10px;
+        width: 380px;
+        height: 250px;
+        transition: 0.4s;
+      }
+
+      .card:hover{
+        transform: scale(1.03, 1.03);
+        transition: 0.4s;
+      }
+      .main_page{
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+      }
+      .cards_right{
+        margin-left: 650px;
+        margin-top: -60%;
+        float: left;
+      }
+      .filtro{
+        text-align: center;
+        margin-top: -75px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: block;
+        width: 400px;
+        height: 140px;
+        background-color: white;
+      }
+      .busca{
+        text-align: center;
+        margin-top: 40px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: block;
+        width: 400px;
+        height: 200px;
+        background-color: white;
+      }
+      .creditos{
+        text-align: center;
+        margin-top: 40px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: block;
+        width: 400px;
+        height: 165px;
+        background-color: white;
+      }
+      h4{
+        font-size: 20px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li>
+        <i class="fas fa-hamburger"> Meu lanche UFAL</i>
+      </li>
+      <li>
+        <input style="margin-left:740px;border-radius: 8px; width: 70px; height: 40px;" type="button" name="Login" value="Login" onclick="window.location.href='login.html'">
+      </li>
+      <li>
+        <input style="border-radius: 8px;width: 92px; height: 40px;" type="button" name="Cadastre-se" value="Cadastre-se" onclick="window.location.href='cadastro.html'">
+      </li>
+    </ul>
+
+    <ul class="main_page">
+      <li>
+        <ul class="list_cards">
+          <li>
+            <div class="card">
+              <div class="imagem">
+                <img class="profile_pic" src="subway.png" alt="subway">
+              </div>
+               <h4 style="margin-left: 110px"><b>Subway do Bira</b></h4>
+               <p style="text-align: center">Cadastre-se para avaliar essa lanchonete</p>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="imagem">
+                <img class="profile_pic" src="cedu.jpeg" alt="Cedu">
+              </div>
+               <h4 style="margin-left: 100px"><b>Lanchonete do CEDU</b></h4>
+               <p style="text-align: center">Cadastre-se para avaliar essa lanchonete</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="cards_right">
+          <li>
+            <div class="filtro">
+              <br>
+              <b>FILTROS:</b><p>
+              <b>Preço</b>
+              <i class="fas fa-arrow-up"></i>
+              <i class="fas fa-arrow-down"></i><p>
+              <b>Avaliação</b>
+              <i class="fas fa-arrow-up"></i>
+              <i class="fas fa-arrow-down"></i><p>
+            </div>
+          </li>
+          <li>
+            <div class="busca">
+              <br>
+              <b>COMO USAR O SITE:</b><p>
+              Cada cartão exibe uma lanchonete da UFAL. <br>
+              À esquerda está a avaliação das lanchontes,<br>
+              à direita está a interface para você fazer<br>
+              sua própria avaliação.<br>
+              A avaliação só poderá ser feita por usuários<br>
+              cadastrados.
+              <p>
+          </li>
+          <li>
+            <div class="creditos">
+              <br>
+              <b>Site feito por:</b><br>
+              <ul style="list-style-type: none; margin-left: -40px;">
+                <li>Carllos Eduardo</li>
+                <li>Jorge Lucas</li>
+                <li>Rafael Emílio</li>
+                <li>Rick Martin</li>
+                <li>Wagner Anthony</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="propaganda" style="margin-top:40px;">
+              <img style="width: 300px; height: 250px; margin-left: 50px" src="eats.jpg">
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <li>
+      <p style="text-align: center"><button onclick="window.location.href='index.html'">Anterior</button>
+      </p>
+    </li>
+  </body>
+</html>

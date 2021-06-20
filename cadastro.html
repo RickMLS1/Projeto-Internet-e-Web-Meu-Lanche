@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/fca8199cf7.js"></script>
+    <style media="screen">
+      body{
+        background-image:  url("coxinha.jpeg");
+        background-size: cover;
+        text-align: center;
+      }
+      .menu {
+        margin-top: -1.5%;
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        background-color: #499869;
+        height: 120px;
+      }
+      .menu li {
+        margin-top: 25px;
+        float: left;
+      }
+      .login{
+        margin-top: 15%;
+        text-align: center;
+      }
+      .fa-hamburger{
+        margin-top: 15px;
+        margin-left: 30px;
+        color: white;
+        font-size: 35px;
+      }
+      .card{
+        display: block;
+        margin-top: 150px;
+        margin-left: 35%;
+        width: 400px;
+        height: 300px;
+        background-color: #499869;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.4s;
+        border-radius: 8px;
+      }
+      input{
+        width: 140px;
+        height: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 0;
+        background-color: #F2F2F2;
+        transition: 0.4s;
+      }
+
+      input:hover{
+        width: 170px;
+        height: 35px;
+      }
+    </style>
+    <title>Meu lanche UFAL</title>
+  </head>
+  <body>
+    <ul class="menu">
+      <li>
+        <i class="fas fa-hamburger"> Meu lanche UFAL</i>
+      </li>
+    </ul>
+    <div class="card">
+      <form class="login">
+        <br>
+        <h2 style="margin-top: 20px; color: #F2F2F2;">CADASTRO</h2>
+        <input  type="text" name="name_user" placeholder=" Usuário"><p>
+        <input  type="password" name="passwd" placeholder=" Senha"><p>
+        <input type="button" name="enviar" value="Cadastrar" onclick="window.location.href='logado.html'"><br><br>
+        <input type="button" name="cancelar" value="Cancelar" onclick="window.location.href='index.html'">
+      </form>
+    </div>
+  </body>
+</html>
